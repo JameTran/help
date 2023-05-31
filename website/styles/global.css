@@ -1,0 +1,70 @@
+/* Setting up the Navbar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  /*padding: 5%;  */
+  height: 110%;
+  background-color: #eee;
+}
+
+#content {
+  padding: 5%;
+}
+
+nav {
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: -5px;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navbar a:hover {
+  background-color: #111;
+  font-weight: bolder;
+}
+
+.title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+footer {
+  bottom: 0;
+  margin: 100px -8px -8px -8px;
+  text-align: center;
+  background-color: #333;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #ddd;
+  position: relative;
+}
+

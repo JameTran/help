@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Resume</title>
+      <link rel="stylesheet" href="styles/global.css">
+      <link rel="stylesheet" href="styles/resume.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+   </head>
+
+   <body>
+      <!-- Navigation Bar -->
+   <nav class="navbar">
+      <ul>
+         <li>
+            <a href="about.html">About</a>
+         </li>
+         <li>
+            <a href="projects.html">Projects</a>
+         </li>
+         <li>
+            <a href="resume.html">Resume</a>
+         </li>
+      </ul>
+   </nav>
+
+      <div id="content">
+         <h1 class="title">Resume</h1>
+         <h2>Jame Tran</h2>
+         <div id="websites">
+            <a href="https://github.com/JameTran">Github</a> 
+            <a href="https://www.linkedin.com/in/jame-tran/">LinkedIn</a>
+         </div>
+         <hr/>
+         <h2>Skills</h2>
+         <table>
+            <tr>
+               <th>Skill</th>
+               <th>Proficiency (out of 5)</th>
+            </tr>
+            <tr>
+               <td>Python</td>
+               <td>4/5</td>
+            </tr>
+            <tr>
+               <td>Git and Github Actions</td>
+               <td>3/5</td>
+            </tr>
+            <tr>
+               <td>Docker and Kubernetes</td>
+               <td>3/5</td>
+            </tr>
+            <tr>
+               <td>Java</td>
+               <td>2/5</td>
+            </tr>
+            <tr>
+               <td>C++</td>
+               <td>2/5</td>
+            </tr>
+         </table>
+         <h3 class="head">Education</h3>
+         <ul>
+            <li>
+               <span id="mac">McMaster University:</span> Software Engineering
+            </li>
+         </ul>
+         <h3 class="head">Experience</h3>
+         <p>
+            CERC@MARC -McMaster University. RESEARCH ASSISTANT II - DEV OPS Dec.2022 to Current
+         </p>
+         <ul>
+            <li>Responsible for confguring and deploying Continuous Integration/Continuous Deliverypipeline using GitHub Actions and Liquibase for micro-services and CassandaraDB,PostgreSQL databases</li>
+            <li>Managed and troubleshooted Docker containerization, orchestration, and scaling of micro-services using Kubernetes
+            </li>
+            <li>Configured and deployed server monitoring using Prometheus to output metrics to custom-made Grafana dashboards, using Sentry for error monitoring</li>
+            <li>Helped develop and deploy a tool to generate code stubs based on OpenAPI documents for microservice APIs</li>
+         </ul>
+
+         <hr/>
+         <h2>Projects</h2>
+         <h3>Capstone - Robot Integrated Pad Trainer 	Sept. 2022 to Current</h3>
+         <ul>
+            <li>
+               Created an automated boxing pad training robot with computer vision to track users' form during training sessions.
+            </li>
+            <li>
+               Trained, tuned, configured and deployed compute vision model (YOLOv7-tiny) to edge device using Nvidia Jetson and TensorRT, resulting in a 2-3 times increase in inference time
+            </li>
+            <li>
+               Developed web app to display user metrics and history using Node.js, React and PostgreSQL
+            </li>
+         </ul>
+         <h3>AI Text Detector 	Feb. 2023 to Mar. 2023</h3>
+         <ul>
+            <li>Trained Support Vector Machines to classify between AI and GPT-3 Curie written text, and optimized them to beat the performance of Naïve Bayes models</li>
+            <li>Used NLP techniques to preprocess, visualize, feature select and vectorize the data, and performed dimensionality reduction using Latent Semantic Analysis</li>
+            <li>Achieved 95% test accuracy using RBF kernel SVM and LSA, beating Naïve Bayes by ~6%</li>
+            <li>
+               Technologies used: scikit-learn, spaCy, pandas, Jupyter Notebook, Python
+            </li>
+         </ul>
+         <h3> <span>Cubespace</span></h3>
+         <ul>
+            <li>Created an app that generated marketing pitches and promotional artwork based on users' natural language specification.</li>
+            <li>Technologies used: GPT-3, Dall-E, Flask, Python</li>
+         </ul>
+      </div>
+      <!-- Contact us form -->
+      <div class="form">
+         <h4>
+            Contact Me!
+         </h4>
+         <p>Leave your email and let's get in touch</p>
+         <form>
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your full name...">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+            <input type="submit" value="Submit">
+         </form>
+         <br>
+      </div>
+
+   <!-- Footer -->
+      <footer>
+         © Jame Tran, 2023 
+      </footer>
+   </body>
+
+
+</html>
+

@@ -1,0 +1,39 @@
+.projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+    row-gap: 10%;
+    justify-items: center;
+}
+
+.grid {
+    width: 100%;
+    text-align: center;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#evenmore {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#aboutmetext {
+    padding: 5%;
+}
+
+#evenmore p {
+    padding: 5%;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
