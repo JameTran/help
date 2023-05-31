@@ -1,20 +1,23 @@
 
-var popup = document.getElementById("myPop");
+let popup = document.getElementsByClassName('popup');
 
-var btn = document.getElementById("myBttn");
+let btn = document.getElementsByClassName('buttonD button');
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName('close');
 
-btn.onclick = function() {
-  popup.style.display = "block";
-}
+[...btn].forEach((btn, ind) => {
+  btn.onclick = () => (popup[ind].style.display = 'block');
+});
 
-span.onclick = function() {
-  popup.style.display = "none";
-}
+[...span].forEach((span, ind) => {
+  span.onclick = () => (popup[ind].style.display = 'none');
+});
 
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}
+window.onclick = (e) => {
+  [...popup].forEach((popup) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+};  
+
