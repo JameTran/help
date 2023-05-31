@@ -4,6 +4,7 @@
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
       <link rel="stylesheet" href="styles/global.css">
       <link rel="stylesheet" href="styles/about.css">
+      <link rel="stylesheet" href="styles/popup.css">
       <title>About Me</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,26 +62,83 @@
          <div class="projects">
 
             <div class="grid">
-               <img src="/website/resources/Movement_Final_Face_On.gif" alt="RIPT" width="200" height="200">
+               <div class="buttonD">
+                  <img src="/website/resources/Movement_Final_Face_On.gif" alt="RIPT" width="200" height="200">
+                  <button class="buttonD button" id="myBttn">Learn More</button>
+               </div>
+               <div id="myPop" class="popup">
+                  <div class="popup-content">
+                    <div class="popup-header">
+                      <span class="close">&times;</span>
+                      <h2>RIPT</h2>
+                    </div>
+                    <div class="popup-body">
+                      <p>The Robot Integrated Pad Trainer (R.I.P.T.) is a device for helping boxers develop their offensive skills. The project uses a YOLOv7 computer vision model to observe and track the user with webcams, and identifies deficiencies in their skills. Once a training regime has been developed by a custom algorithm, pad training sessions can be conducted with the new regime. A gantry like system moves pads around for the user to interact with, sensing when they are hit before moving to a new location. This robotic emulation of a human pad trainer allows for more direct customization in the training, and is expandable and repeatable for any number of users and skill levels.
+                      </p>
+                    </div>
+                    <div class="popup-footer">
+                      <a href="https://github.com/brlnoble/RIPT_Capstone"><h3>See the Github repository</h3></a>
+                    </div>
+                  </div>
+                
+                </div>
                <h3>
                   RIPT: Robot Integrated Pad Trainer
                </h3>
             </div>
             
             <div class="grid">
-               <img src="/website/resources/oddoneout.png" alt="Cubespace" width="200" height="200">
+               <div class="buttonD">
+                  <img src="/website/resources/oddoneout.png" alt="Odd One Out" width="200" height="200">
+                  <button class="buttonD button" id="myBttn">Learn More</button>
+               </div>
+               <div id="myPop" class="popup">
+                  <div class="popup-content">
+                    <div class="popup-header">
+                      <span class="close">&times;</span>
+                      <h2>Odd One Out: Machine Learning Detection of AI Text</h2>
+                    </div>
+                    <div class="popup-body">
+                      <p>Three machine learning models used to detect GPT3 Curie generated Wikipedia articles. using SVMs and Naive Bayes. Done for DATASCI 3ML3 final project. 
+                      </p>
+                    </div>
+                    <div class="popup-footer">
+                      <a href="https://github.com/JameTran/OddOneOut"><h3>See the Github repository</h3></a>
+                    </div>
+                  </div>
+               </div>
                <h3>
                   Odd One Out: Machine Learning Detection of AI Text
                </h3>
             </div>
 
             <div class="grid">
-               <img src="/website/resources/cubespace.png" alt="Cubespace" width="200" height="200">
+               <div class="buttonD">
+                  <img src="/website/resources/cubespace.png" alt="Cubespace" width="200" height="200">
+                  <button class="buttonD button" id="myBttn">Learn More</button>
+               </div>
+               <div id="myPop" class="popup">
+                  <div class="popup-content">
+                    <div class="popup-header">
+                      <span class="close">&times;</span>
+                      <h2>Cubespace: AI Powered Marketing</h2>
+                    </div>
+                    <div class="popup-body">
+                      <p>An AI powered marketing took which generates a two-sentence (tweet sized) creative advertisement for a product based on user entered prompts. Users are also able to tweet the output directly from the web app. 
+                      </p>
+                    </div>
+                    <div class="popup-footer">
+                      <a href="https://github.com/JameTran/Cubespace"><h3>See the Github repository</h3></a>
+                    </div>
+                  </div>
+               </div>
                <h3>
                   Cubespace: AI Powered Marketing
                </h3>
             </div>
          </div>
+         <script type="text/javascript" src="/website/scripts/popup.js">
+         </script>
       </div>
       <!-- Footer -->
    <footer>
