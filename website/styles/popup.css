@@ -69,7 +69,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .buttonD {
-  position: relative;  
+  position: relative;
+  display: flex;
+  justify-content: center;
   width:100%;
   max-width:100px;
 }
@@ -84,9 +86,12 @@ background-color:rgba(0,0,0,0);
 .buttonD:hover::before {
 background-color:rgba(0,0,0,0.5);
 }
+
 .buttonD img {
-display:block;
+  display: flex;
+  justify-content: center;
 }
+
 .buttonD button {
 position: absolute;
 top: 50%;
