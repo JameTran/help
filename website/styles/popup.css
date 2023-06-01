@@ -89,7 +89,7 @@ background-color:rgba(0,0,0,0.5);
 
 .buttonD img {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .buttonD button {
